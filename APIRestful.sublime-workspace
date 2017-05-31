@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"canti",
+				"$cantidadTransacciones〔variable〕"
+			],
+			[
+				"Pro",
+				"PRODUCTO_NO_DISPONIBLE〔constant〕"
+			],
+			[
+				"belo",
+				"belongsTo〔function〕"
+			],
+			[
 				"tMoti",
 				"tMotivoRechazo"
 			],
@@ -307,19 +319,76 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "database/seeds/DatabaseSeeder.php",
+			"settings":
+			{
+				"buffer_size": 241,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/User.php",
+			"settings":
+			{
+				"buffer_size": 511,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/User/Usercontroller.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 6139 files for \"$vendedor->products->random\"\n\nC:\\APIRestful\\database\\factories\\ModelFactory.php:\n   61          'quantity' => $faker->numberBetween(1, 3),\n   62          'buyer_id' => $comprador->id,\n   63:         'product_id' => $vendedor->products->random()->id(),\n   64      ];\n   65  });\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 322,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "database/factories/ModelFactory.php",
+			"settings":
+			{
+				"buffer_size": 761,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "Homestead.yaml",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 104.0,
+		"height": 127.0,
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 512.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -336,7 +405,26 @@
 	},
 	"file_history":
 	[
+		"/C/APIRestful/app/Http/Controllers/User/Usercontroller.php",
 		"/C/APIRestful/Homestead.yaml",
+		"/C/Users/ACER ASPIRE/Documents/hosts",
+		"/C/APIRestful/database/factories/ModelFactory.php",
+		"/C/APIRestful/app/Product.php",
+		"/C/APIRestful/app/Providers/AppServiceProvider.php",
+		"/C/APIRestful/database/migrations/2017_05_10_230416_category_product_table.php",
+		"/C/APIRestful/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/APIRestful/database/migrations/2017_05_08_232010_create_products_table.php",
+		"/C/APIRestful/database/migrations/2017_05_08_232056_create_transactions_table.php",
+		"/C/APIRestful/app/Category.php",
+		"/C/APIRestful/app/Buyer.php",
+		"/C/APIRestful/app/Seller.php",
+		"/C/APIRestful/app/Transaction.php",
+		"/C/APIRestful/database/migrations/2017_05_08_232114_create_categories_table.php",
+		"/C/APIRestful/app/User.php",
+		"/C/APIRestful/app/Providers/RouteServiceProvider.php",
+		"/C/APIRestful/routes/web.php",
+		"/C/APIRestful/routes/api.php",
+		"/C/APIRestful/.env",
 		"/C/Users/ACER ASPIRE/hosts",
 		"/C/Windows/System32/drivers/etc/hosts",
 		"/C/xampp/htdocs/c-pro/modelo/json/aut-requisicion.php",
@@ -444,26 +532,7 @@
 		"/C/xampp/htdocs/som/vista/cata-tima-det.php",
 		"/C/xampp/htdocs/som/vista/cata-tuma-bit_.php",
 		"/C/xampp/htdocs/som/vista/cata-tima-bit_.php",
-		"/C/xampp/htdocs/som/vista/cata-unme-bit.php",
-		"/C/xampp/htdocs/som/vista/cata-unme-reg.php",
-		"/C/xampp/htdocs/som/vista/cata-unme-det.php",
-		"/C/xampp/htdocs/som/modelo/json/json-unidad.php",
-		"/C/xampp/htdocs/som/vista/cata-unme-bit_.php",
-		"/C/xampp/htdocs/som/vista/cata-conc-reg.php",
-		"/C/xampp/htdocs/som/vista/cata-conc-det.php",
-		"/C/xampp/htdocs/som/modelo/json/json-concepto.php",
-		"/C/xampp/htdocs/som/vista/cata-conc-bit_.php",
-		"/C/xampp/htdocs/som/vista/cata-equi-det.php",
-		"/C/xampp/htdocs/som/modelo/json/json-equipo.php",
-		"/C/xampp/htdocs/som/vista/cata-equi-bit.php",
-		"/C/xampp/htdocs/som/vista/cata-equi-bit_.php",
-		"/C/xampp/htdocs/som/vista/cata-tien-reg.php",
-		"/C/xampp/htdocs/som/vista/cata-tien-det.php",
-		"/C/xampp/htdocs/som/modelo/json/json-tipoentidad.php",
-		"/C/xampp/htdocs/som/vista/cata-tien-bit.php",
-		"/C/xampp/htdocs/som/vista/cata-tien-bit_.php",
-		"/C/xampp/htdocs/som/vista/cata-turn-bit.php",
-		"/C/xampp/htdocs/som/vista/cata-turn-reg.php"
+		"/C/xampp/htdocs/som/vista/cata-unme-bit.php"
 	],
 	"find":
 	{
@@ -474,6 +543,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"C:\\APIRestful",
 			"C:\\xampp\\htdocs\\som\\controlador\\css",
 			"C:\\xampp\\htdocs\\som\\controlador",
 			"C:\\xampp\\htdocs\\som",
@@ -490,6 +560,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$vendedor->products->random",
+			"string",
 			"REquisicion",
 			"bServicio",
 			"2",
@@ -615,9 +687,7 @@
 			"eCodOrden",
 			"valor",
 			"CodCliente",
-			"CodBuque",
-			"dSubtotal",
-			"AgenteNaviero"
+			"CodBuque"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -636,8 +706,194 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "database/seeds/DatabaseSeeder.php",
+					"settings":
+					{
+						"buffer_size": 241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/User.php",
+					"settings":
+					{
+						"buffer_size": 511,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Http/Controllers/User/Usercontroller.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 322,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										241,
+										268
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "database/factories/ModelFactory.php",
+					"settings":
+					{
+						"buffer_size": 761,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Homestead.yaml",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -697,6 +953,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 248.0,
+	"side_bar_width": 324.0,
 	"status_bar_visible": true
 }

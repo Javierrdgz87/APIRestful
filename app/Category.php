@@ -4,15 +4,23 @@ namespace App;
 
 use App\Product;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Category extends Model
 {
-    //$fillable -> atributos que pueden ser asignados de manera masiva
+	use SoftDeletes;
+    
+    protected $dates = ['delete_at'];
+
     protected $fillable = [
     	'name',
     	'description',
     ];
 
+    protected $hidden = [
+    	'pivot'
+    ];
+    
     public function products(){
     	return $this->belongsToMany(Product::class);
     }

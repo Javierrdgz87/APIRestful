@@ -3,45 +3,61 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, SoftDeletes;
 
     const USUARIO_VERIFICADO = '1';
     const USUARIO_NO_VERIFICADO = '0';
-
     const USUARIO_ADMINISTRADOR = 'true';
     const USUARIO_REGULAR = 'false';
 
     protected $table = 'users';
 
+    protected $dates = ['delete_at'];
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 
-        'email', 
+        'name',
+        'email',
         'password',
         'verified',
         'verification_token',
         'admin',
     ];
 
+    protected $hidden = [
+        'password',
+        'remember_token',
+        'verification_token',
+    ];
+
+    //mutador se utiliza para modificar el valor original de un atributo antes de hacer la insercion en la bd
+    public function setNameAttribute($valor){
+        $this->attributes['name'] = strtolower($valor);
+    }
+    //accesor para modificar el valor de un atributo dado despues de haberlo obtenido de la bd
+    
+    public function getNameAttribute($valor){
+        return ucwords($valor);
+    }
+
+    //mutador
+    public function setEmailAttribute($valor){
+        $this->attributes['email'] = strtolower($valor);
+    }
     /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
      */
-    protected $hidden = [
-        'password', 
-        'remember_token',
-        'verification_token',
-    ];
-    
+
     public function esVerificado(){
         return $this->verified == User::USUARIO_VERIFICADO;
     }

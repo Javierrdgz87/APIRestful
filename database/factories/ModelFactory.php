@@ -2,8 +2,8 @@
 
 use App\User;
 use App\Seller;
-use App\Category;
 use App\Product;
+use App\Category;
 use App\Transaction;
 /*
 |--------------------------------------------------------------------------
@@ -32,7 +32,6 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 });
 
 $factory->define(Category::class, function (Faker\Generator $faker) {
-
     return [
         'name' => $faker->word,
         'description' => $faker->paragraph(1),
@@ -40,26 +39,23 @@ $factory->define(Category::class, function (Faker\Generator $faker) {
 });
 
 $factory->define(Product::class, function (Faker\Generator $faker) {
-
     return [
         'name' => $faker->word,
         'description' => $faker->paragraph(1),
         'quantity' => $faker->numberBetween(1, 10),
         'status' => $faker->randomElement([Product::PRODUCTO_DISPONIBLE, Product::PRODUCTO_NO_DISPONIBLE]),
         'image' => $faker->randomElement(['1.jpg', '2.jpg', '3.jpg']),
-        //'seller_id' => User::inRandomOrder()->first()->id,
+        // 'seller_id' => User::inRandomOrder()->first()->id,
         'seller_id' => User::all()->random()->id,
     ];
 });
 
-
 $factory->define(Transaction::class, function (Faker\Generator $faker) {
-
     $vendedor = Seller::has('products')->get()->random();
     $comprador = User::all()->except($vendedor->id)->random();
     return [
         'quantity' => $faker->numberBetween(1, 3),
         'buyer_id' => $comprador->id,
-        'product_id' => $vendedor->products->random()->id(),
+        'product_id' => $vendedor->products->random()->id,
     ];
 });
